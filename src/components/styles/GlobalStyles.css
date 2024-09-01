@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+:root {
+  --background-color: #fbf2f2;
+  --background-color-second: #fff;
+  --input-border-color: #ccc;
+  --input-main-text: #1a1a1e;
+  --input-text: #fff;
+  --input-second-text: #51525c;
+  --input-text-disabled: #d1d1d6;
+  --input-error-color: #fda29b;
+  --input-error-shadow: rgba(240, 68, 56, 0.24);
+  --input-label-required: #d92d20;
+  --input-label-info-hover: #555;
+  --input-focus-border: #84caff;
+  --input-focus-shadow: rgba(46, 144, 250, 0.24);
+}
+[data-theme="dark"] {
+  --background-color: #1e1e1e;
+  --background-color-second: #2d2929;
+  --input-border-color: #ccc;
+  --input-main-text: #fafafa;
+  --input-text: #fff;
+  --input-second-text: #a0a0ab;
+  --input-text-disabled: #3f3f46;
+  --input-error-color: #fda29b;
+  --input-error-shadow: rgba(240, 68, 56, 0.24);
+  --input-label-required: #f97066;
+  --input-label-info-hover: #555;
+  --input-focus-border: #53b1fd;
+  --input-focus-shadow: rgba(46, 144, 250, 0.24);
+}

@@ -1,0 +1,23 @@
+.input-annotation {
+  margin-top: 4px;
+}
+
+.input-annotation .description {
+  color: var(--input-second-text);
+  font-size: 12px;
+  position: relative;
+  top: 100%;
+  left: 0;
+  white-space: normal;
+  width: 40%;
+}
+
+.input-annotation .helpText {
+  color: var(--input-label-required);
+  font-size: 12px;
+  position: relative;
+  top: 100%;
+  left: 0;
+  white-space: normal;
+  width: 40%;
+}

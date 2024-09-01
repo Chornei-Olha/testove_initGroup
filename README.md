@@ -1,6 +1,6 @@
 ## Overview
 
-This project features a collection of reusable and customizable input components built with **React** and **TypeScript**. The components are designed with a focus on accessibility, responsiveness, and ease of integration into any modern web application. 
+This project features a collection of reusable and customizable input components built with **React** and **TypeScript**. The components are designed with a focus on accessibility, responsiveness, and ease of integration into any modern web application.
 
 ## Components
 
@@ -18,9 +18,10 @@ This project features a collection of reusable and customizable input components
 ## Installation
 
 To get started, clone the repository and install the dependencies:
+
 ```
 git clone https://github.com/Chornei-Olha/testove_initGroup
-cd repositoryname
+cd testove_input
 npm install
 ```
 
@@ -54,7 +55,7 @@ The components handle multiple states including:
 - Focus
 - Error
 - Disabled
-  
+
 You can easily modify these states or add new ones as needed.
 
 ### Contributing

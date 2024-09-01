@@ -1,0 +1,99 @@
+.input-text-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.input-info {
+  font-size: 9px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.question-icon {
+  background-color: var(--background-color);
+  border: 1px solid var(--input-border-color);
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 5px;
+  color: var(--input-second-text);
+}
+
+.command-key {
+  border: 1px solid var(--input-border-color);
+  border-radius: 3px;
+  padding: 4px;
+  margin-left: 5px;
+}
+
+.input-text {
+  font-size: 12px;
+  padding-left: 36px;
+  padding-right: 70px;
+  color: var(--input-main-text);
+  background-color: transparent;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
+.input-text.small {
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.input-text.large {
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.input-text.extra-large {
+  font-size: 14px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.input-text:focus {
+  outline: none;
+  border: 1px solid var(--input-focus-border);
+  box-shadow: 0px 0px 0px 4px var(--input-focus-shadow);
+}
+
+.input-text.quiet {
+  border: none;
+  background-color: transparent;
+}
+
+.input-text:disabled {
+  color: #d1d1d6;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.input-text.error {
+  border-color: var(--input-error-color);
+}
+
+.input-text.error:hover,
+.input-text.error:focus {
+  box-shadow: 0px 0px 0px 4px var(--input-error-shadow);
+}

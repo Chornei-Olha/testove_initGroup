@@ -1,0 +1,91 @@
+.input-label-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: var(--input-main-text);
+}
+
+.input-label {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.input-label.small {
+  font-size: 12px;
+}
+
+.input-label.large {
+  font-size: 14px;
+}
+
+.required {
+  color: var(--input-label-required);
+  margin-left: 10px;
+  position: relative;
+}
+
+.required:hover::after {
+  content: attr(title);
+  position: absolute;
+  background-color: var(--input-label-info-hover);
+  color: var(--input-text);
+  padding: 5px;
+  border-radius: 4px;
+  bottom: 150%;
+  left: 100%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.required:hover {
+  cursor: pointer;
+}
+
+.info-icon {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  background-color: var(--input-border-color);
+  color: var(--input-text);
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.info-icon:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 160px;
+  background-color: var(--input-label-info-hover);
+  color: var(--input-text);
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--input-label-info-hover);
+}
